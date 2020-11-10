@@ -18,7 +18,7 @@ class Module(BaseModule, ThreadingMixin):
 
     def module_run(self, usernames):
         # retrieve list of sites
-        url = 'https://raw.githubusercontent.com/WebBreacher/WhatsMyName/master/web_accounts_list.json'
+        url = 'https://raw.githubusercontent.com/johnfsu/yuh.json/main/yuh.json'
         self.verbose(f"Retrieving {url}...")
         resp = self.request('GET', url)
         for user in usernames: 
